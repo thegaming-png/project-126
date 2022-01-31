@@ -1,3 +1,7 @@
+//Variables//
+song1 = '';
+song2 = '';
+
 function setup() {
     canvas = createCanvas(600, 500);
     canvas.center();
@@ -9,4 +13,9 @@ function setup() {
 
 function draw() {
     image(video, 0, 0, 600, 500);
+}
+
+function preload() {
+    song1 = loadSong("song1.mp3");
+    song2 = loadSong("music.mp3");
 }
